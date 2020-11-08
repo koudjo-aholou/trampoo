@@ -1,0 +1,25 @@
+{
+  "name": "nafnaf",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/koudjo-aholou/nafnafGame.git",
+  "author": "Koudjo AHOLOU <ah.koudjo@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compileBabel": "yarn babel ./app.js --out-file ./compile/script-compiled.js",
+    "deploy": "surge --project ./compile --domain https://trampo.surge.sh/"
+  },
+  "dependencies": {
+    "surge": "^0.21.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
